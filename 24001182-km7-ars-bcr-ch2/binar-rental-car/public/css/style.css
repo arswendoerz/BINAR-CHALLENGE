@@ -1,0 +1,93 @@
+* {
+    font-family: Helvetica;
+  }
+
+.container #cm-search {
+  gap: 0px;
+  border-radius: 8px;   
+  opacity: 1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+  z-index: 2;  
+  position: relative;
+  width: 80%;
+}
+
+.car-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;  
+  z-index: 1;  
+  opacity: 0.9; 
+}
+
+.form-search {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form-select,
+.form-control {
+  padding: 10px;
+    color: #8A8A8A;
+    border: 1px solid #8A8A8A;
+    font-size: 12px;
+    border-radius: 4px; 
+    width: 200px; 
+}
+
+input[type="date"]::before {
+  content: attr(placeholder);
+  position: absolute;
+  color: #666666;
+}
+
+input[type="date"] {
+  color: #ffffff;
+}
+
+input[type="date"]:focus,
+input[type="date"]:valid {
+  color: #666666;
+}
+
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+  content: "";
+}
+
+.tombol-search {
+  margin-top: 18px;
+}
+.tombol-search button {
+  background-color: #5CB85F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    height: fit-content;
+    display: flex;
+}
+
+@media (min-width: 576px) {
+    .hero-text {
+      padding-left: 80px;
+    }
+  
+    .image-car img {
+      width: 100%;
+    }
+}
