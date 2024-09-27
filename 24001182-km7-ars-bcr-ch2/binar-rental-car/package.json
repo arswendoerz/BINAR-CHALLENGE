@@ -1,0 +1,12 @@
+{
+  "name": "binar-fsw-challenge-04",
+  "version": "1.0.0",
+  "description": "Project HTTP Server dan DOM",
+  "main": "server/index.js",
+  "author": "Arswendo Erza Sadewa",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node server/index.js"
+  }
+}
