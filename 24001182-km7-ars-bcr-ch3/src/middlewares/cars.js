@@ -36,13 +36,13 @@ exports.validateCreateCar = (req, res, next) => {
         model: z.string(),
         image: z.string().optional(),
         rentPerDay: z.string(),
-        capacity: z.number(),
+        capacity: z.string(),
         description: z.string(),
         availableAt: z.string(),
         transmission: z.string(),
-        available: z.boolean(),
+        available: z.string(),
         type: z.string(),
-        year: z.number(),
+        year: z.string(),
         options: z.array(z.string()).optional(),
         specs: z.array(z.string()).optional(),
     });
@@ -65,26 +65,19 @@ exports.validateUpdateCar = (req, res, next) => {
         throw new BadRequestError(resultValidateParams.error.errors);
     }
 
-    req.body ={
-        ...req.body,
-        capacity : parseInt(req.body.capacity),
-        available : req.body.available === 'true',
-        year : parseInt(req.body.year),
-    }
-
     const validateBody = z.object({
         plate: z.string(),
         manufacture: z.string(),
         model: z.string(),
         image: z.string().optional(),
         rentPerDay: z.string(),
-        capacity: z.number(),
+        capacity: z.string(),
         description: z.string(),
         availableAt: z.string(),
         transmission: z.string(),
-        available: z.boolean(),
+        available: z.string(),
         type: z.string(),
-        year: z.number(),
+        year: z.string(),
         options: z.array(z.string()).optional(),
         specs: z.array(z.string()).optional(),
     });
