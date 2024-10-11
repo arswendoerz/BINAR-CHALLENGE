@@ -67,7 +67,6 @@ exports.validateUpdateCar = (req, res, next) => {
 
     req.body ={
         ...req.body,
-        rentPerDay : parseInt(req.body.rentPerDay),
         capacity : parseInt(req.body.capacity),
         available : req.body.available === 'true',
         year : parseInt(req.body.year),
