@@ -2,9 +2,9 @@ const ImageKit = require("imagekit");
 
 // Image kit init
 const imagekit = new ImageKit({
-    publicKey: process.env.IMAGEKIT_PUBLIC_KEY,
-    privateKey: process.env.IMAGEKIT_PRIVATE_KEY,
-    urlEndpoint: process.env.IMAGEKIT_URL_ENDPOINT,
+    publicKey: "public_pHgQxba9uoNPiyGk2QPA1UdHR/w=",
+    privateKey: "private_zH7cbr3jy9zptTDgxJDe78ZiGC8=",
+    urlEndpoint: "https://ik.imagekit.io/arswendoerza"
 });
 
 const imageUpload = async (file) => {
