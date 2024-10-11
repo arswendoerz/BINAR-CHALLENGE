@@ -29,7 +29,7 @@ exports.getCarById = (req, res, next) => {
 
 exports.createCar = async (req, res, next) => {
     try {
-        const data = await carService.createCar(req.body, req.files); // Ambil file dari req.file
+        const data = await carService.createCar(req.body, req.files); 
         successResponse(res, data);
     } catch (error) {
         next(error);
@@ -39,7 +39,7 @@ exports.createCar = async (req, res, next) => {
 exports.updateCar = async (req, res, next) => {
     const { id } = req.params;
     try {
-        const data = await carService.updateCar(id, req.body, req.files); // Ambil file dari req.file
+        const data = await carService.updateCar(id, req.body, req.files); 
         successResponse(res, data);
     } catch (error) {
         next(error); 
